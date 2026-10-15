@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ariadne Net 隐私政策</title>
+<meta name="description" content="Ariadne Net 不收集任何数据。哪些数据留在你的设备上，App 会连接哪些地址。">
+<link rel="icon" href="../../icon.png">
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<header><div class="wrap">
+  <div class="brand"><img src="../../icon.png" alt=""><div><h1>Ariadne Net</h1><p>iPhone 上按规则分流的代理客户端</p></div></div>
+  <nav><a href="../../zh/">技术支持</a><a href="../../zh/privacy/" aria-current="page">隐私政策</a><a class="lang" href="../../privacy/">English</a></nav>
+</div></header>
+<main><div class="wrap">
+<section class="card">
+<h2>隐私政策</h2>
+<p>最后更新：2026-10-14</p>
+<p>Ariadne（&quot;本 App&quot;）是一款按配置规则转发网络流量的代理工具。我们不提供代理节点，也不运营代理服务器。</p>
+<h3>我们不收集任何数据</h3>
+<ul>
+<li>本 App 没有账号系统，不要求登录。</li>
+<li>我们不收集、不存储、不出售、不分享你的个人信息、浏览记录、流量内容或设备标识。</li>
+<li>本 App 不含广告，不含第三方统计、崩溃收集或追踪组件。</li>
+<li>我们没有接收你数据的服务器。</li>
+</ul>
+<h3>保存在你设备上的数据</h3>
+<p>以下数据只保存在你的设备上，由你自己管理，删除 App 时一并删除：</p>
+<ul>
+<li>你安装或导入的配置文件，以及订阅链接（订阅链接通常包含你在服务商处的账号凭据，iOS 上保存在系统钥匙串里）；</li>
+<li>规则集和外部节点列表的缓存；</li>
+<li>连接记录（请求列表）和实时流量，只在本机显示；</li>
+<li>流量统计（每天的流量，按网络类型、直连或代理、节点、策略和网站汇总），保存最近 90 天，可以随时清除；</li>
+<li>运行日志，保存在 App 的共享容器里，只在本机使用。Mac 版的&quot;导出诊断报告&quot;由你手动触发，导出前会去掉主机名、地址和凭据。</li>
+<li>你安装的模块和脚本，以及脚本自己保存的数据；</li>
+<li>HTTPS 解密用的证书：在你的设备上生成，私钥保存在系统钥匙串里，从不离开设备；</li>
+<li>抓包记录（你打开&quot;记录&quot;后才有）：请求和响应的头部及部分正文，保留最近 300 条，可以随时清空；DNS 解析记录（你打开&quot;记录解析&quot;后才有）只在内存里，断开即消失。</li>
+</ul>
+<h3>HTTPS 解密和脚本（可选）</h3>
+<p>HTTPS 解密、改写和脚本是 Pro 功能，默认关闭。你打开 HTTPS 解密并在系统里信任本 App 生成的证书后，发往你的配置和模块列出的主机的 HTTPS 流量会在你的设备上解密，按你安装的改写规则和脚本处理，再加密发出。这一切只在你的设备上进行，解密后的内容不会发给我们或任何第三方。脚本由你从网址安装，可能自己联网（例如查询出口 IP），它们的行为由脚本作者决定，请只安装你信任的脚本。</p>
+<h3>本 App 会连接的网络地址</h3>
+<p>本 App 只在实现你要求的功能时联网：</p>
+<ul>
+<li>你添加的订阅链接和配置里引用的地址（例如规则集、外部节点列表），用于下载和更新配置；</li>
+<li>GEOIP 规则用的国家 IP 段列表：配置里有 GEOIP 规则时，从 GitHub（raw.githubusercontent.com）下载和更新；</li>
+<li>你安装的模块、脚本和它们引用的数据所在的地址，用于下载和每天更新；以及你安装的脚本自己请求的地址；</li>
+<li>你配置的代理服务器：开启连接后，设备的网络流量按你的配置规则直连或经这些服务器转发。这些服务器由你选择的服务商运营，我们看不到也不记录经过它们的流量；</li>
+<li>加密 DNS 服务：为了不让网络运营商看到或篡改域名查询，本 App 默认通过加密 DNS（DoH）查询域名，内置使用阿里云公共 DNS 和腾讯 DNSPod，你的配置也可以指定其他服务。DNS 服务商会看到被查询的域名，适用它们各自的隐私政策；</li>
+<li>测速：测量节点延迟时访问配置或设置里的测速地址（都没有设置时是 Google 的 www.gstatic.com）；</li>
+<li>网络诊断：你运行诊断时，访问 Apple 的连通性检测地址、加密 DNS 服务，以及 Cloudflare（用来显示你的出口 IP 和所在地区）。</li>
+</ul>
+<h3>iCloud 同步（可选）</h3>
+<p>如果你在 App 里打开 iCloud 同步（Pro 功能，默认关闭），你的配置、订阅链接、节点选择和订阅用量会保存到你自己的 iCloud，在你登录同一 Apple 账户的设备之间同步。配置内容和订阅链接端到端加密，只有你的设备能读取；我们无法访问你 iCloud 里的任何数据。关闭同步不会删除你设备上的数据。</p>
+<h3>通知</h3>
+<p>订阅流量和到期提醒是本机生成的本地通知，默认关闭，由你在设置里打开。</p>
+<h3>购买</h3>
+<p>Pro 和试用通过 Apple 的 App 内购买完成。付款由 Apple 处理，本 App 只在设备上验证购买记录（StoreKit），不会把购买信息发给我们。</p>
+<h3>儿童</h3>
+<p>本 App 不面向 13 岁以下儿童，也不会有意收集任何人的信息。</p>
+<h3>政策变更</h3>
+<p>本政策如有变更，会更新本页面并修改生效日期。</p>
+<h3>联系我们</h3>
+<p>通过本 App 在 App Store 页面上的支持链接联系我们。</p>
+</section>
+</div></main>
+<footer>© 2026 Ariadne Network</footer>
+</body>
+</html>
